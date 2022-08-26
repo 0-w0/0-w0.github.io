@@ -1,0 +1,4 @@
+.error-text__visited-reference:focus {
+    border-bottom: 3px solid;
+    background: silver;
+}

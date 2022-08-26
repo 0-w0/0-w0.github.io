@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu__item-reference {
+    margin: 0px 2px;
+    padding: 20px;
+    border: 1px solid silver;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-style: none;
+    background: linear-gradient(#121, #333);
+    box-shadow: 0 14px 28px rgba(255,255,255,0.25);
+}

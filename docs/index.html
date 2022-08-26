@@ -2,93 +2,143 @@
 <html lang="en">
     <head>
         <title>Hi, nice to meet you!</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="styles/header.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/menu.css">
+        <link rel="stylesheet" type="text/css" href="styles/index/common.css">
+        <link rel="stylesheet" type="text/css" href="styles/index/section-content.css">
+        <link rel="stylesheet" type="text/css" href="styles/index/reference.css">
+        <link rel="stylesheet" type="text/css" href="styles/index/button.css">
+        <link rel="stylesheet" type="text/css" href="styles/index/table.css">
     </head>
     <body>
-        <h1>It's my first attempt to create a website about myself!</h1>
-        <h2>And I'm glad to see you here!</h2>
+        <header class="header">
+            <h1 class="header__title">It's my first attempt to create a website about myself!</h1>
+            <h2 class="header__subtitle">And I'm glad to see you here!</h2>
 
-        <section>
-            <h3>Content:</h3>
-            <ul class="content">
-                <li><a href="#about">Some info about me</a></li>
-                <li><a href="#scope">What I can do</a></li>
-                <li><a href="#stuff">About useful stuff</a></li>
-                <li><a href="#additional">More info</a></li>
-                <li><a href="#frog">Froge section</a></li>
-            </ul>
+            <div class="header__menu menu">
+                <a class="menu__item" href="#about">
+                    <div class="menu__item-reference">Some info about me</div>
+                </a>
+                <a class="menu__item" href="#about">
+                    <div class="menu__item-reference">What I can do</div>
+                </a>
+                <a class="menu__item" href="#about">
+                    <div class="menu__item-reference">About useful stuff</div>
+                </a>
+                <a class="menu__item" href="#about">
+                    <div class="menu__item-reference">More info</div>
+                </a>
+                <a class="menu__item" href="#about">
+                    <div class="menu__item-reference">Froge section</div>
+                </a>
+            </div>
+        </header>
+
+        <section class="info section" id="about">
+            <h3 class="info__titel">Some info about me.</h3>
+            <p class="info__text">Anna, 20 y.o. try studying at sfedu in Taganrog. And of course there is a lot of facts in my biografy that could be putted here, but no.
         </section>
 
-        <section id="about">
-            <h3>Some info about me.</h3>
-            <p>Anna, 20 y.o. try studying at sfedu in Taganrog. And of course there is a lot of facts in my biografy that could be putted here, but no.
-        </section>
-
-        <section id="scope">
-            <h3>What I can do:</h3>
-            <ol class="what-can-i-do-list">
-                <li>sleep;</li>
-                <li>eat;</li>
-                <li>procrastinate and think about the futility of being;</li>
-                <li>some other useful stuff.</li>
+        <section class="scope section" id="scope">
+            <h3 class="scope__title">What I can do:</h3>
+            <ol class="scope__can-do-list can-do-list">
+                <li class="can-do-list__item">sleep;</li>
+                <li class="can-do-list__item">eat;</li>
+                <li class="can-do-list__item">procrastinate and think about the futility of being;</li>
+                <li class="can-do-list__item">some other useful stuff.</li>
             </ol>
+            <div class="scope__button">
+                <a href="404.html"><button class="button_alternative button">don't click here</button></a>
+            </div>
         </section>
 
-        <section id="stuff">
-            <h3>About that <em>useful</em> stuff:</h3>
-            <table class="tametable" border="1">
-                <caption>Tametable of doing <strong>really</strong> usefull things</caption>
-                <tr>
-                    <td></td>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                    <th>Sun</th>
-                </tr>
-                <tr>
-                    <td>useless</td>
-                    <td align="center" colspan="7" rowspan="2">NO TIME SPECIFISED</td>
-                </tr>
-                <tr>
-                    <td>useful</td>
-                </tr>
-            </table>
-            <p>So there is no actual time when you can be sure that i'm busy.</p>
+        <section class="useful-things section" id="stuff">
+            <h3 class="useful-things__title">About that <em>useful</em> stuff:</h3>
+
+            <div class="useful-things__caption caption">
+                Tametable of doing <strong>really</strong> usefull things
+            </div>
+            <div class="useful-things__timetable">
+                <div class="useful-things__usefulness-table usefulness-table">
+                    <div class="usefulness-table__row">
+                        <div class="usefulness-table__cell"></div>
+                        <div class="usefulness-table__cell">Mon</div>
+                        <div class="usefulness-table__cell">Tue</div>
+                        <div class="usefulness-table__cell">Wed</div>
+                        <div class="usefulness-table__cell">Thu</div>
+                        <div class="usefulness-table__cell">Fri</div>
+                        <div class="usefulness-table__cell">Sat</div>
+                        <div class="usefulness-table__cell">Sun</div>
+                    </div>
+                    <div class="usefulness-table__row">
+                        <div class="usefulness-table__col">
+                            <div class="usefulness-table__cell">useless</div>
+                            <div class="usefulness-table__cell">useful</div>
+                        </div>
+                        <div class="usefulness-table__cell_big usefulness-table__cell">NO TIME SPECIFISED</div>    
+                    </div>
+                </div>
+            </div>
+
+            <p class="useful-things__text">So there is no actual time when you can be sure that i'm busy.</p>
         </section>
 
-        <section id="additional">
-            <h3>More info about me.</h3>
-            <p>Anyway I need to put some more data about myself and here is another list:</p>
+        <section class="additional section" id="additional">
+            <h3 class="additional__title">More info about me.</h3>
+            <p class="additional__text">Anyway I need to put some more data about myself and here is another list:</p>
 
-            <ol>
-                <li>What I like:
-                    <ul>
-                        <li>Georgian cuisine;</li>
-                        <li>resting;</li>
-                        <li>playing strategies or rpg for hours;</li>
-                        <li>origami;</li>
-                        <li>frogs;</li>
-                        <li>memes with frogs;</li>
-                        <li>even more frogs.</li>
+            <ol class="additional__more-about more-about">
+                <li class="more-about__item">What I like:
+                    <ul class="more-about__item more-about__item_sub">
+                        <li class="more-about__item more-about__item_sub2">Georgian cuisine;</li>
+                        <li class="more-about__item more-about__item_sub2">resting;</li>
+                        <li class="more-about__item more-about__item_sub2">playing strategies or rpg for hours;</li>
+                        <li class="more-about__item more-about__item_sub2">origami;</li>
+                        <li class="more-about__item more-about__item_sub2">frogs;</li>
+                        <li class="more-about__item more-about__item_sub2">memes with frogs;</li>
+                        <li class="more-about__item more-about__item_sub2">even more frogs.</li>
                     </ul>
                 </li>
-                <li>What I dislike:
-                    <ul>
-                        <li>people who don't like frogs.</li>
+                <li class="more-about__item more-about__item">What I dislike:
+                    <ul class="more-about__item more-about__item_sub">
+                        <li class="more-about__item more-about__item_sub2">people who don't like frogs.</li>
                     </ul>
                 </li>   
             </ol>
         </section>
 
-        <section id="frog">
-            <h3>Froge section</h3>
-            <p>Here is a pic of frog for you because they are kinda cute :S</p>
-            <a href="https://www.youtube.com/watch?v=egG7TmPKvuo"><img class="displayed" src="https://s9.travelask.ru/uploads/post/000/023/450/main_image/full-6c7d9a7dc8bfcc96f7693c576178c6d7.jpg" width=400 alt="frog"></a>
-            <p>And here a video of
-            <a href="https://www.youtube.com/watch?v=jiGR0Ezh-yc">frog</a> in youtube</p>
+        <section class="frog section" id="frog">
+            <h3 class="frog__title">Froge section</h3>
+            <p class="frog__text">Here is a pic of frog for you because they are kinda cute :S</p>
+            <a class="frog__reference reference" href="https://www.youtube.com/watch?v=egG7TmPKvuo">
+                <img class="reference__displayed" src="https://s9.travelask.ru/uploads/post/000/023/450/main_image/full-6c7d9a7dc8bfcc96f7693c576178c6d7.jpg" width=400 alt="frog">
+            </a>
+            <p class="frog__text">
+                And here a video of
+                <a class="frog__reference reference" href="https://www.youtube.com/watch?v=jiGR0Ezh-yc">frog</a>
+                 in youtube
+             </p>
         </section>
+
+        <section class="articles section">
+            <div class="articles__content">
+                <a href="https://ru.wikipedia.org/wiki/%D0%9B%D1%8F%D0%B3%D1%83%D1%88%D0%BA%D0%B8">
+                    <button class="button_frog button">frogs</button>
+                </a>
+                <a href="https://ru.wikiquote.org/wiki/%D0%9B%D1%8F%D0%B3%D1%83%D1%88%D0%BA%D0%B0">
+                    <button class="button_quote button">quote</button>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a class="footer__reference" href="https://vk.com/kurlukracc">
+                <img class="footer__img" src="pictures/if_vk.png" alt="vk link">
+            </a>
+            <a class="footer__reference" href="https://www.instagram.com/_ra_raccoon_">
+                <img class="footer__img" src="pictures/instagram.png" alt="instagram link">
+            </a>
+        </footer>
     </body>
 </html>

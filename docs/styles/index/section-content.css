@@ -1,0 +1,22 @@
+.content-section__content {
+    list-style-type: square;
+}
+
+.scope__can-do-list {
+    list-style-type: upper-roman;
+}
+
+.scope__button {
+    display: flex;
+    justify-content: end;
+}
+
+.useful-things__timetable {
+    display: flex;
+    justify-content: center;
+}
+
+.articles__content {
+    display: flex;
+    justify-content: space-around;
+}

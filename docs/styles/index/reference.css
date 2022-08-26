@@ -1,0 +1,13 @@
+.reference:active {
+    color: red;
+}
+
+.reference:visited {
+    color: red;
+}
+
+.reference__displayed {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

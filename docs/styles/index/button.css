@@ -1,0 +1,49 @@
+.button {
+    position: relative;
+
+    display: inline-block;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: .5em 2em;
+    height: 40px;
+
+    text-align: center;
+    font-size: 14px;
+
+    border-radius: 8px;
+}
+
+
+.button_alternative {
+    color: #E67E22;
+    font-weight: bolder;
+
+    background-color: #1A3B16;
+    border: 2px dotted;
+}
+
+.button_quote {
+    color: #333;
+    font-weight: 700;
+
+    background-color: white;
+    border: 2px solid;
+}
+
+
+.button_frog {
+    color: white;
+    font-weight: 700;
+
+    background-color: #333;
+    border: 2px solid;
+}
+
+.button:hover {
+    background: rgba(0,0,0,1);
+}
+
+.button:active {
+    background: silver;
+}

@@ -1,0 +1,22 @@
+.usefulness-table__row {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    width: 480px;
+    background: linear-gradient(#5d9979, #032111);
+}
+
+.usefulness-table__cell {
+    box-sizing: border-box;
+    width: 60px;
+    height: 20px;
+
+    text-align: center;
+    border: 1px solid black;
+}
+
+.usefulness-table__cell_big {
+    width: 420px;
+    height: 40px;
+}
